@@ -98,7 +98,7 @@ const TrollOverlay = ({ onCancel }) => {
           <div style={{ fontSize: '64px', marginBottom: '16px', animation: 'pulse 2s infinite' }}>🤡</div>
           <h2 style={{ color: '#60a5fa', marginBottom: '16px', fontSize: '24px' }}>CHÚC MỪNG CÁ THÁNG TƯ!</h2>
           <p style={{ color: '#e2e8f0', fontSize: '16px', lineHeight: '1.6' }}>
-            Bạn đã bị lừa rồi nhé! Tài khoản của bạn vẫn an toàn tuyệt đối và sẽ có không ai bị chửi cả. <br/><br/>
+            Bạn đã bị lừa rồi nhé! Tài khoản của bạn vẫn an toàn tuyệt đối và sẽ không có ai bị chửi cả. <br/><br/>
             Chúc bạn một ngày 1/4 thật nhiều niềm vui ^^
           </p>
           <button className="btn-glass" style={{ marginTop: '32px', padding: '12px 40px', fontSize: '16px', background: 'rgba(96, 165, 250, 0.2)' }} onClick={() => window.location.reload()}>

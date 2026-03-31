@@ -97,7 +97,7 @@ function App() {
               <label><input type="checkbox" defaultChecked /> Chửi tất cả trừ bạn bè</label>
               <label><input type="checkbox" defaultChecked /> Chửi Mod, Admin (group, page)</label>
               <label><input type="checkbox" defaultChecked /> Chửi thằng đăng status</label>
-              <label><input type="checkbox" /> Chửi Tàu khựa</label>
+              <label><input type="checkbox" /> Chửi Đồng nghiệp</label>
               <label><input type="checkbox" defaultChecked /> Chửi trẻ trâu, anh hùng bàn phím</label>
               <label><input type="checkbox" /> Chửi theo từng nick name</label>
               <label><input type="checkbox" defaultChecked /> Chửi theo danh sách User ID:</label>
