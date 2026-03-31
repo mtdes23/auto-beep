@@ -1,0 +1,106 @@
+.troll-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex; justify-content: center; align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.glitch-bg {
+  animation: glitchBg 0.2s step-end;
+  background: rgba(100, 0, 0, 0.8);
+}
+
+@keyframes glitchBg {
+  0% { background: rgba(255, 0, 0, 0.9); }
+  50% { background: rgba(0, 0, 255, 0.5); }
+  100% { background: rgba(100, 0, 0, 0.8); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.troll-box {
+  width: 500px; padding: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.spinner {
+  display: inline-block; width: 20px; height: 20px;
+  border: 3px solid rgba(255,255,255,0.3);
+  border-top-color: #60a5fa; border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.progress-bar-bg {
+  width: 100%; height: 16px;
+  background: rgba(0, 0, 0, 0.4); border-radius: 8px;
+  overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.progress-bar-fill {
+  height: 100%; background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  transition: width 0.3s ease; box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+.error-fill {
+  background: linear-gradient(90deg, #ef4444, #f87171);
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+}
+
+@keyframes pulse {
+  0% { opacity: 0.8; }
+  50% { opacity: 1; }
+  100% { opacity: 0.8; }
+}
+
+.troll-log {
+  margin-top: 12px; font-family: monospace; font-size: 13px; color: #9ca3af;
+}
+
+.alert-box {
+  width: 600px; padding: 0; border: 2px solid rgba(239, 68, 68, 0.5);
+  box-shadow: 0 0 50px rgba(239, 68, 68, 0.3); background: rgba(20, 0, 0, 0.6);
+  backdrop-filter: blur(20px); overflow: hidden;
+  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes shake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+
+.alert-header {
+  background: rgba(239, 68, 68, 0.2); padding: 16px 20px;
+  font-size: 18px; font-weight: bold; color: #fca5a5;
+  border-bottom: 1px solid rgba(239, 68, 68, 0.3); display: flex; align-items: center; gap: 12px;
+}
+
+.alert-content { padding: 24px; font-size: 15px; line-height: 1.5; }
+
+.alert-actions {
+  padding: 16px 24px; background: rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex; justify-content: flex-end; gap: 16px;
+}
+
+.btn-danger {
+  background: #ef4444; color: white; border: none; padding: 8px 16px;
+  border-radius: 6px; font-weight: bold; cursor: pointer;
+  box-shadow: 0 4px 10px rgba(239, 68, 68, 0.4);
+}
+
+.troll-btn {
+  position: absolute; right: 0; top: 0; transition: transform 0.15s ease-out; z-index: 1010;
+}
